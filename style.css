@@ -1,0 +1,258 @@
+/*svg animation*/
+.svg-0c .outer-ring circle{
+  opacity:0;
+}
+.svg-0c .outer-ring circle:nth-child(5){
+  animation: 250ms linear stroke-5 forwards;
+  animation-delay: 500ms;
+ 
+
+}
+.svg-0c .outer-ring circle:nth-child(4){
+  animation: 125ms linear stroke-4 forwards;
+  animation-delay: 750ms;
+}
+ .svg-0c .outer-ring circle:nth-child(3){
+  animation: 125ms linear stroke-3 forwards;
+  animation-delay: 875ms;
+
+}
+
+.svg-0c .outer-ring circle:nth-child(2){
+  animation: 125ms linear stroke-2 forwards;
+  animation-delay: 1s;
+
+}
+
+.svg-0c .outer-ring circle:nth-child(1){
+  animation:500ms ease-out stroke-1 forwards;
+  animation-delay: 1125ms;
+
+}
+.svg-0c .hoon {
+  animation: 0.5s scale forwards;
+  opacity: 0;
+}
+
+.svg-0c .inner-ring {
+  animation: 0.5s scale forwards;
+  animation-delay: 0.3s;
+  opacity: 0;
+  
+}
+
+@keyframes scale {
+  from {
+    stroke-width: 2;
+    
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes stroke-5 {
+  from{
+    stroke-dasharray: 0 248;
+  }
+  to{
+    opacity:1;
+  }
+}
+@keyframes stroke-4 {
+  from{
+    stroke-dashoffset: -30;
+    opacity:1;
+  }
+  to{
+    opacity:1;
+  }
+}
+@keyframes stroke-3 {
+  from{
+    stroke-dashoffset: -90;
+    opacity:1;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+@keyframes stroke-2 {
+  from{
+    stroke-dashoffset: -110;
+    opacity:1;
+  }
+  to{
+    opacity:1;
+  }
+}
+@keyframes stroke-1 {
+  from{
+    stroke-dashoffset: -72;
+    opacity:1;
+  }
+  to{
+    opacity:1;
+  }
+}
+
+
+.invisible {
+	transition: opacity 0.5s ease;
+	opacity: 0.0;
+}
+
+.visible {
+	transition: opacity 0.5s ease;
+	opacity: 1.0;
+}
+
+#hoon{
+  animation: expand .4s forwards;
+}
+#arvo{
+  animation: expand-down .8s forwards;
+  
+}                                                                                                                                                       
+#nock-label{
+  opacity:0;
+  animation: fade-in 1s ease-in-out forwards;
+  animation-delay: 0.2s;
+}
+
+#hoon-label{
+  opacity:0;
+  animation: fade-in 1s ease-in-out forwards;
+  animation-delay: .4s;
+}
+
+#arvo-label{
+  opacity:0;
+  animation: fade-in 1s ease-in-out forwards;
+  animation-delay: .6s;
+}
+@keyframes fade-in{
+  from{
+    opacity:0;
+  }
+  to{
+    opacity:1;
+  }
+}
+@keyframes expand {
+  from{
+    transform: translateY(-58rem);
+    -webkit-animation-timing-function: ease-in;
+  }
+  to{
+    transform: translateY(unset);
+  }
+}
+
+@keyframes expand-down{
+  0%{
+    transform: translateY(-132rem);
+    -webkit-animation-timing-function: ease-in;
+    
+  } 
+  50%{
+    transform: translateY(-74rem);
+     -webkit-animation-timing-function: ease-out;
+    
+  }
+  100%{
+    transform: translateY(unset);
+     
+  }
+}
+/* utilities */
+
+.mx-auto {
+  margin-left: auto;  margin-right: auto;
+}
+
+
+/* Background Color */
+.bg-black{
+  background-color:black;
+}
+
+.debug-grid {
+  background-image:
+    linear-gradient(transparent 3px, gray 4px),
+    linear-gradient(90deg, transparent 3px, gray 4px);
+  background-position: calc(50% - 2px) top;
+  background-size: 4px 4px;
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+}
+.video-container iframe {
+	position: absolute;
+  top:0;
+  left:0;
+	width: 100%;
+	height: 100%;
+}
+
+/* font feature notational alternative */
+.nalt {
+	-moz-font-feature-settings:"nalt";
+	-moz-font-feature-settings:"nalt=1";
+	-ms-font-feature-settings:"nalt";
+	-o-font-feature-settings:"nalt";
+	font-feature-settings:"nalt";
+}
+/* grid */
+.column-reverse {
+  flex-direction: column-reverse;
+}
+
+/* shapes */
+.square-green {
+  background-color: #64CC8E;
+  border-color: #64CC8E;
+}
+.square-green-light {
+  background-color: #D2CCDB;
+  border-color: #D2CCDB; 
+}
+
+.square-orange {
+  background-color: #FFC440;
+  border-color: #FFC440;
+}
+
+.square-orange-dark{
+  background-color:#E5BB67;
+  border-color: #E5BB67;
+}
+
+.square-gray {
+  background-color: #797384;
+  border-color: #797384;
+}
+
+.square-blue {
+  background-color: #3973C6;
+  border-color:#3973C6;
+}
+
+.square-cyan {
+  background-color: #96DAEA;
+  border-color:#96DAEA;
+}
+
+.square-navy {
+  background-color: #10008B;
+  border-color: #10008B;
+}
+
+.square-purple{
+  background-color: #7272ED;
+  border-color: #7272ED;
+}
