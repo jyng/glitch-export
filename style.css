@@ -5,7 +5,7 @@
 .svg-0c .outer-ring circle:nth-child(5){
   animation: 250ms linear stroke-5 forwards;
   animation-delay: 500ms;
- 
+
 
 }
 .svg-0c .outer-ring circle:nth-child(4){
@@ -38,13 +38,13 @@
   animation: 0.5s scale forwards;
   animation-delay: 0.3s;
   opacity: 0;
-  
+
 }
 
 @keyframes scale {
   from {
     stroke-width: 2;
-    
+
   }
   to {
     opacity: 1;
@@ -98,23 +98,13 @@
 }
 
 
-.invisible {
-	transition: opacity 0.5s ease;
-	opacity: 0.0;
-}
-
-.visible {
-	transition: opacity 0.5s ease;
-	opacity: 1.0;
-}
-
 #hoon{
   animation: expand .4s forwards;
 }
 #arvo{
   animation: expand-down .8s forwards;
-  
-}                                                                                                                                                       
+
+}
 #nock-label{
   opacity:0;
   animation: fade-in 1s ease-in-out forwards;
@@ -154,17 +144,21 @@
   0%{
     transform: translateY(-132rem);
     -webkit-animation-timing-function: ease-in;
-    
-  } 
+
+  }
   50%{
     transform: translateY(-74rem);
      -webkit-animation-timing-function: ease-out;
-    
+
   }
   100%{
     transform: translateY(unset);
-     
+
   }
+}
+/* overflow */
+.overflow-x{
+  overflow-x: hidden;
 }
 /* utilities */
 
@@ -219,7 +213,7 @@
 }
 .square-green-light {
   background-color: #D2CCDB;
-  border-color: #D2CCDB; 
+  border-color: #D2CCDB;
 }
 
 .square-orange {
