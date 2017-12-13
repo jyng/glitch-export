@@ -1,3 +1,4 @@
+
 /*svg animation*/
 .svg-0c .outer-ring circle{
   opacity:0;
@@ -195,6 +196,11 @@
 	height: 100%;
 }
 /* Type Scale */
+.p--intro{
+  font-size: 5rem; //@extend .text-lg
+  font-weight: 500; //@extend .text-500
+  line-height: 8rem;
+}
 
 /* font feature notational alternative */
 .nalt {
