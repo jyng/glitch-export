@@ -119,10 +119,17 @@
 .overflow-x {
   overflow-x: hidden; }
 
+/*Color */
+.black {
+  color: black; }
+
 /* utilities */
 .mx-auto {
   margin-left: auto;
   margin-right: auto; }
+
+.text-decoration-none {
+  text-decoration: none; }
 
 /* Background Color */
 .bg-black {
