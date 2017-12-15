@@ -141,8 +141,31 @@
 /* Style the panini
 must add span in markup to display icon
  */
+.full-menu {
+  visibility: hidden;
+  display: table;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out; }
+
+.full-menu--open {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+  background-color: tomato; }
+
+.overflow-hidden {
+  overflow: hidden; }
+
+.panini-icon {
+  z-index: 3; }
+
 .panini-icon span {
-  display: block;
   position: absolute;
   height: 4px;
   width: 100%;
@@ -197,7 +220,7 @@ must add span in markup to display icon
   padding-top: 40px;
   height: 100%;
   width: 100%;
-  background: gray;
+  background: tomato;
   left: 0;
   top: 0;
   opacity: 0;
@@ -205,8 +228,8 @@ must add span in markup to display icon
 
 .menu-fullscreen.open {
   opacity: 1;
-  z-index: 2;
-  position: fixed; }
+  position: fixed;
+  z-index: 1; }
 
 .menu {
   list-style: none;
@@ -215,6 +238,11 @@ must add span in markup to display icon
 .menu li {
   padding-left: 2rem; }
 
+/*******/
+.revealOnScroll {
+  opacity: 0; }
+
+/******/
 /*Color */
 .black {
   color: black; }
